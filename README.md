@@ -21,4 +21,4 @@ Poll information is assumed to be formatted as shown in the example, which can b
 ##### Unfinished
 I planned to add functionality to save the votes within the JSON file containing the poll information, 
 however I did not have time to implement this. 
-"#Technical_Test" 
+ 
