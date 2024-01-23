@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <img src="logo.png">
+    <title>Dizplai</title>
+</head>
+<body>
+    <h1><%= pollOptions.question %></h1>
+    <form method="post" action="/vote">
+        <% for (const optionId in options) { %>
+            <input type="radio" id="option_<%= optionId %>" name="option" value="<%= optionId %>" class="hidden-radio">
+            <label for="option_<%= optionId %>" class="custom-label">
+                <%= options[optionId].text %>
+            </label>
+        <% } %>
+        <button type="submit">SUBMIT</button>
+    </form>
+    
+</body>
+</html>
